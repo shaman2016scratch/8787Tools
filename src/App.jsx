@@ -1,12 +1,5 @@
 import { useEffect, useState } from "react";
-import Main from "./components/main/main.jsx";
-import Noauth from "./components/noauth/noauth.jsx";
-import Credits from "./components/main/credits.jsx";
-import Login from "./components/login/login.jsx";
-import Regestrate from "./components/reg/reg.jsx";
-import TP from "./components/tp/tp.jsx";
-import TOS from "./components/main/tos.jsx";
-import { isLogin, getMyUser } from "./lib/user.js";
+import devTools from "./components/devTools/ind.jsx";
 import "./App.css";
 
 const App = () => {
@@ -20,7 +13,9 @@ const App = () => {
 	    );
 	} else if (page === "/devTools.html" || page === "/devTools") {
 		return (
-		    <div className="app-viewport"></div>
+		    <div className="app-viewport">
+                <devTools />
+            </div>
 	    );
 	}
 };
