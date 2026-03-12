@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import devTools from "./components/devTools/ind.jsx";
 
 const App = () => {
-	const page = window.location.pathname.split("/BluOf")[1]
+	const page = window.location.pathname.split("/8787Tools")[1]
 	const [token, setTokenState] = useState(
 	    localStorage.getItem('bluof-session-token'),
 	);
