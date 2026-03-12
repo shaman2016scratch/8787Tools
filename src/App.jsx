@@ -3,9 +3,6 @@ import devTools from "./components/devTools/ind.jsx";
 
 const App = () => {
 	const page = window.location.pathname.split("/8787Tools")[1]
-	const [token, setTokenState] = useState(
-	    localStorage.getItem('bluof-session-token'),
-	);
 	if (page === "/" || page === "/index.html" || page === "/index") {
 	    return (
 		    <div className="app-viewport"></div>
