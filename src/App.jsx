@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import devTools from "./components/devTools/ind.jsx";
-import "./App.css";
 
 const App = () => {
 	const page = window.location.pathname.split("/BluOf")[1]
